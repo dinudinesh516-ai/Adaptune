@@ -23,6 +23,8 @@
 }
 
 html {
+  /* override Bootstrap's :root smooth scrolling; anchor scrolling is animated in useSmoothAnchors.js */
+  scroll-behavior: auto !important;
 
   scroll-padding-top: var(--nav-h);
 }

@@ -1,6 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Reveal from './Reveal.jsx'
 import { ADDRESS, SERVICES, SOCIAL, WHATSAPP_DISPLAY, waLink } from '../config.js'
+
+// Google Maps is heavy; loading it mid-scroll freezes the page for a moment.
+// Only load it once the map is on screen and scrolling has settled.
+function LazyMap({ src, title }) {
+  const ref = useRef(null)
+  const [load, setLoad] = useState(false)
+  useEffect(() => {
+    if (load) return
+    let timer
+    let visible = false
+    const arm = () => {
+      clearTimeout(timer)
+      if (visible) timer = setTimeout(() => setLoad(true), 300)
+    }
+    const io = new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting
+      arm()
+    })
+    io.observe(ref.current)
+    window.addEventListener('scroll', arm, { passive: true })
+    return () => {
+      io.disconnect()
+      clearTimeout(timer)
+      window.removeEventListener('scroll', arm)
+    }
+  }, [load])
+  return (
+    <div className="map-wrap mt-auto" ref={ref}>
+      {load && <iframe title={title} src={src} referrerPolicy="no-referrer-when-downgrade" />}
+    </div>
+  )
+}
 
 const initial = { name: '', type: '', date: '', size: '', location: '', message: '' }
 
@@ -128,14 +160,7 @@ export default function Contact() {
                   </div>
                 </li>
               </ul>
-              <div className="map-wrap mt-auto">
-                <iframe
-                  title="Adaptune studio location"
-                  src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS.mapQuery)}&output=embed`}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+              <LazyMap title="Adaptune studio location" src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS.mapQuery)}&output=embed`} />
             </Reveal>
           </div>
         </div>

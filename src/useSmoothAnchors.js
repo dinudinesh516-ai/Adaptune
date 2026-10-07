@@ -24,7 +24,9 @@ function animateScrollTo(target) {
 
   const step = (now) => {
     const t = Math.min(1, (now - t0) / duration)
-    window.scrollTo(0, start + distance * easeInOutCubic(t))
+    // 'instant' is essential: Bootstrap sets `scroll-behavior: smooth` on :root, which would turn
+    // every per-frame step into its own competing smooth-scroll and cause stalls.
+    window.scrollTo({ top: start + distance * easeInOutCubic(t), left: 0, behavior: 'instant' })
     if (t < 1) frame = requestAnimationFrame(step)
     else stop()
   }
