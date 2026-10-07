@@ -27,11 +27,24 @@ html {
   scroll-padding-top: var(--nav-h);
 }
 
+/* Stop sideways panning on phones. `overflow-x: hidden` on body alone is ignored by mobile
+   browsers for touch scrolling; `clip` on the root actually cuts off anything wider than the screen
+   (e.g. the tilted marquee strip) without creating a scroll container. */
+html,
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
+}
+main,
+.site-footer {
+  overflow-x: clip;
+}
+
 body {
   background: var(--ink);
   color: var(--text);
   font-family: var(--font-body);
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
