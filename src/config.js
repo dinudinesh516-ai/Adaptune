@@ -30,13 +30,35 @@ export const SERVICES = [
   { icon: 'bi-buildings-fill', title: 'Corporate Events', text: 'Team performances and flash mobs for launches, offsites and celebrations.' },
 ]
 
-// Team members. Photos go in /team named by the name, e.g. team/vismai-shankar.jpg.
-// `role` and `instagram` are optional; leave them empty ('') to hide them.
-export const TEAM = [
-  { name: 'Vismai Shankar', role: '', instagram: '' },
-  { name: 'Faizal', role: '', instagram: '' },
-  { name: 'Jerin', role: '', instagram: '' },
-]
+// ─── Team ──────────────────────────────────────────────────────────────────
+// Every photo in /team becomes a team card automatically. The photo's file name (without
+// extension) is the key below, e.g. team/Vismai.jpg → TEAM.Vismai.
+// People listed in TEAM_ORDER come first, in that order; everyone else follows alphabetically.
+export const TEAM_ORDER = ['Vismai', 'Faizal', 'Jeffin']
+
+const LOREM =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+
+// Placeholder values (marked "Subtitle", "X", "Style …") are for you to replace.
+// name        → full name shown on the card (defaults to the file name)
+// role        → subtitle under the name
+// experience  → years of experience, e.g. '8+'
+// knownStyles → list of styles they dance
+// expertIn    → their signature / expert style
+// bio         → paragraph shown in the profile popup
+// instagram   → optional full Instagram URL ('' hides the button)
+export const TEAM = {
+  Vismai: { name: 'Vismai Shankar', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  Faizal: { name: 'Faizal', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  Jeffin: { name: 'Jeffin', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  Ganapathy: { name: 'Ganapathy', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  Nakshathran: { name: 'Nakshathran', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  Sajith: { name: 'Sajith', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  Varsha: { name: 'Varsha', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+}
+
+// Used for anyone whose photo is added but who has no entry above yet
+export const TEAM_DEFAULTS = { role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' }
 
 export const waLink =(text = "Hi Adaptune! I'd like to enquire about choreography.") =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`

@@ -26,9 +26,10 @@ The two images currently in `gallery/` are your promo banners, included as place
 
 ## Team photos
 
-Put each member's photo in the **`team/`** folder, named after them: `vismai-shankar.jpg`, `faizal.jpg`, `jerin.jpg`.
-Portrait photos (about 4:5) look best. Until a photo exists, a placeholder with initials is shown.
-Names, roles and Instagram links for each member are in `TEAM` in [`src/config.js`](src/config.js).
+Every photo in the **`team/`** folder becomes a team card automatically (square photos fit best).
+The file name is the key: `team/Vismai.jpg` → `TEAM.Vismai` in [`src/config.js`](src/config.js), where you set each
+person's name, role (subtitle), years of experience, known styles, expert style, bio and Instagram link.
+Clicking a card opens their profile. `TEAM_ORDER` sets who appears first (currently Vismai, Faizal, Jeffin); the rest follow alphabetically.
 
 ## Editing contact details and text
 
