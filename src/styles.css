@@ -68,6 +68,11 @@ body {
 .profile-body::-webkit-scrollbar-track { background: transparent; }
 .profile-body::-webkit-scrollbar-thumb { border: 0; }
 
+/* While a popup is open the page underneath can't scroll and its scrollbar hides (see scrollLock.js).
+   The gutter stays reserved so the layout doesn't jump sideways when the bar disappears. */
+html { scrollbar-gutter: stable; }
+html.scroll-locked { overflow: hidden; }
+
 /* Firefox */
 @supports not selector(::-webkit-scrollbar) {
   html { scrollbar-color: var(--brand) #0a0a0a; scrollbar-width: thin; }
@@ -653,13 +658,13 @@ body {
   align-items: center;
   justify-content: center;
   padding: clamp(0.75rem, 3vw, 2rem);
-  overflow-y: auto;
+  overflow: hidden; /* only the profile body scrolls; avoids a second scrollbar */
 }
 .profile-card {
   position: relative;
   width: 100%;
   max-width: 960px;
-  max-height: calc(100dvh - 1.5rem);
+  max-height: 100%; /* fits inside the backdrop padding */
   display: flex;
   flex-direction: column;
   background: var(--card);

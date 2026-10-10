@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { lockScroll } from '../scrollLock.js'
 import Reveal from './Reveal.jsx'
 import { TEAM, TEAM_DEFAULTS, TEAM_ORDER } from '../config.js'
 
@@ -101,11 +102,10 @@ function TeamModal({ index, onChange, onClose }) {
       if (e.key === 'ArrowRight') go(1)
       if (e.key === 'ArrowLeft') go(-1)
     }
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
+    const unlock = lockScroll()
     window.addEventListener('keydown', onKey)
     return () => {
-      document.body.style.overflow = prev
+      unlock()
       window.removeEventListener('keydown', onKey)
       openerRef.current?.focus?.({ preventScroll: true })
     }
