@@ -50,6 +50,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ─── Scrollbar ──────────────────────────────────────────────── */
+/* Chrome, Edge, Safari: slim dark track with a rounded brand-yellow thumb.
+   (Chrome ignores these if `scrollbar-color` is also set, so that's kept for Firefox only below.) */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--brand), var(--brand-deep));
+  border-radius: 10px;
+  border: 2px solid #0a0a0a; /* gap around the thumb so it looks like it floats */
+}
+::-webkit-scrollbar-thumb:hover { background: #ffd54d; }
+::-webkit-scrollbar-thumb:active { background: var(--brand-deep); }
+::-webkit-scrollbar-corner { background: #0a0a0a; }
+/* inner scroll areas (e.g. the team profile popup) get a thinner bar on the card colour */
+.profile-body::-webkit-scrollbar { width: 6px; }
+.profile-body::-webkit-scrollbar-track { background: transparent; }
+.profile-body::-webkit-scrollbar-thumb { border: 0; }
+
+/* Firefox */
+@supports not selector(::-webkit-scrollbar) {
+  html { scrollbar-color: var(--brand) #0a0a0a; scrollbar-width: thin; }
+  .profile-body { scrollbar-color: var(--brand) transparent; scrollbar-width: thin; }
+}
+
 ::selection {
   background: var(--brand);
   color: #000;
