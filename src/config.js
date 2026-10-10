@@ -44,7 +44,6 @@ const LOREM =
 // role        → subtitle under the name
 // experience  → years of experience, e.g. '8+'
 // knownStyles → list of styles they dance
-// expertIn    → their signature / expert style
 // bio         → paragraph shown in the profile popup
 // instagram   → optional full Instagram URL ('' hides the button)
 export const TEAM = {
@@ -57,7 +56,6 @@ export const TEAM = {
       'Western', 'Hip Hop', 'Free Style', 'Jazz', 'Salsa', 'Ballet', 'Contemporary', 'African Style', 'Jungle Style',
       'Folk', 'Semi Folk', 'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance', 'Zumba',
     ],
-    expertIn: 'Western Choreography',
     bio: 'A creative choreographer with more than a decade of experience, Vismai designs routines that span western, contemporary and cinematic folk styles, translating stories and music into movement that captivates audiences. Vismai currently choreographs for over ten schools across Coimbatore, has created pieces for colleges including PSG, Karpagam, NGP and Nirmala College, and for corporates such as Cognizant, Dell and Bosch. TV appearances include Ungalil Yaar Adutha Prabhudeva (Star Vijay), India’s Dancing Super Star (Star Plus) and Miracle Dance (Vijay TV). Vismai is also a licensed international Zumba and Aqua Zumba instructor.',
     instagram: '',
   },
@@ -69,7 +67,6 @@ export const TEAM = {
       'Western', 'Hip Hop', 'Free Style', 'Salsa', 'Contemporary', 'Jungle Style', 'Folk', 'Semi Folk',
       'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance',
     ],
-    expertIn: 'Hip Hop',
     bio: 'An energetic and versatile western-style dancer with over 10 years of experience, Faizal specialises in hip-hop, contemporary, freestyle and commercial choreography. Known for dynamic movement, strong musicality and the ability to pick up new styles quickly, Faizal performs solo and in groups across stage shows, music videos, cultural festivals and freestyle battles, and danced in the film Friendship. TV appearances include Miracle Dance (Vijay TV), Miracle Dancers (Vendhar TV) and Rainbow Dance (Polimer TV).',
     instagram: '',
   },
@@ -81,18 +78,25 @@ export const TEAM = {
       'Western', 'Hip Hop', 'Free Style', 'Contemporary', 'Jungle Style', 'Folk', 'Semi Folk', 'Cinematic Folk',
       'Traditional Folk', 'Creative Dance',
     ],
-    expertIn: 'Contemporary',
     bio: 'A passionate and dedicated dancer with years of training and performance in contemporary, hip-hop and freestyle, Jeffin brings strong stage presence and a knack for learning new styles fast. Jeffin choreographs for schools across Coimbatore and for colleges including SNR, Hindusthan and UIT, has competed at the state-level dance competition in Kerala, and has appeared on Little Super Stars (Jaya TV) and Miracle Dance (Vijay TV).',
     instagram: '',
   },
-  Ganapathy: { name: 'Ganapathy', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
-  Nakshathran: { name: 'Nakshathran', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
-  Sajith: { name: 'Sajith', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
-  Varsha: { name: 'Varsha', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  // Sajeeth: details from his bio data
+  Sajeeth: {
+    name: 'Sajeeth',
+    role: 'Subtitle',
+    experience: '12',
+    knownStyles: ['All Western Styles', 'Hip Hop', 'Popping', 'Locking', 'Contemporary', 'Semi Classical', 'Folk Dance'],
+    bio: 'With 12 years of experience across every western dance style, from hip-hop, popping and locking to contemporary, as well as semi classical and folk, Sajeeth brings range and feeling to every routine. In Sajeeth’s own words: “For me, dance isn’t just entertainment. It’s a subject that lets me express all my emotions, a source of complete happiness and connection. Dance is my soul.”',
+    instagram: '',
+  },
+  Ganapathy: { name: 'Ganapathy', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' },
+  Nakshathran: { name: 'Nakshathran', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' },
+  Varsha: { name: 'Varsha', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' },
 }
 
 // Used for anyone whose photo is added but who has no entry above yet
-export const TEAM_DEFAULTS = { role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' }
+export const TEAM_DEFAULTS = { role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' }
 
 export const waLink =(text = "Hi Adaptune! I'd like to enquire about choreography.") =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`

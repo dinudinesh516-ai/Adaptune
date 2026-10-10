@@ -162,10 +162,6 @@ function TeamModal({ index, onChange, onClose }) {
                         <span className="profile-big">{m.experience}</span> years
                       </dd>
                     </div>
-                    <div>
-                      <dt>Expert in</dt>
-                      <dd className="profile-expert">{m.expertIn}</dd>
-                    </div>
                   </dl>
 
                   <p className="profile-label">Known styles</p>
