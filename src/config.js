@@ -48,9 +48,43 @@ const LOREM =
 // bio         → paragraph shown in the profile popup
 // instagram   → optional full Instagram URL ('' hides the button)
 export const TEAM = {
-  Vismai: { name: 'Vismai Shankar', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
-  Faizal: { name: 'Faizal', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
-  Jeffin: { name: 'Jeffin', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
+  // Vismai, Faizal and Jeffin: details taken from their resumes
+  Vismai: {
+    name: 'Vismai Shankar',
+    role: 'Subtitle',
+    experience: '13+', // choreographing since June 2013
+    knownStyles: [
+      'Western', 'Hip Hop', 'Free Style', 'Jazz', 'Salsa', 'Ballet', 'Contemporary', 'African Style', 'Jungle Style',
+      'Folk', 'Semi Folk', 'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance', 'Zumba',
+    ],
+    expertIn: 'Western Choreography',
+    bio: 'A creative choreographer with more than a decade of experience, Vismai designs routines that span western, contemporary and cinematic folk styles, translating stories and music into movement that captivates audiences. Vismai currently choreographs for over ten schools across Coimbatore, has created pieces for colleges including PSG, Karpagam, NGP and Nirmala College, and for corporates such as Cognizant, Dell and Bosch. TV appearances include Ungalil Yaar Adutha Prabhudeva (Star Vijay), India’s Dancing Super Star (Star Plus) and Miracle Dance (Vijay TV). Vismai is also a licensed international Zumba and Aqua Zumba instructor.',
+    instagram: '',
+  },
+  Faizal: {
+    name: 'Faizal',
+    role: 'Subtitle',
+    experience: '10+', // "over 10 years" per resume summary
+    knownStyles: [
+      'Western', 'Hip Hop', 'Free Style', 'Salsa', 'Contemporary', 'Jungle Style', 'Folk', 'Semi Folk',
+      'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance',
+    ],
+    expertIn: 'Hip Hop',
+    bio: 'An energetic and versatile western-style dancer with over 10 years of experience, Faizal specialises in hip-hop, contemporary, freestyle and commercial choreography. Known for dynamic movement, strong musicality and the ability to pick up new styles quickly, Faizal performs solo and in groups across stage shows, music videos, cultural festivals and freestyle battles, and danced in the film Friendship. TV appearances include Miracle Dance (Vijay TV), Miracle Dancers (Vendhar TV) and Rainbow Dance (Polimer TV).',
+    instagram: '',
+  },
+  Jeffin: {
+    name: 'Jeffin',
+    role: 'Subtitle',
+    experience: '5+', // "5 years" per resume summary (school work listed since 2018)
+    knownStyles: [
+      'Western', 'Hip Hop', 'Free Style', 'Contemporary', 'Jungle Style', 'Folk', 'Semi Folk', 'Cinematic Folk',
+      'Traditional Folk', 'Creative Dance',
+    ],
+    expertIn: 'Contemporary',
+    bio: 'A passionate and dedicated dancer with years of training and performance in contemporary, hip-hop and freestyle, Jeffin brings strong stage presence and a knack for learning new styles fast. Jeffin choreographs for schools across Coimbatore and for colleges including SNR, Hindusthan and UIT, has competed at the state-level dance competition in Kerala, and has appeared on Little Super Stars (Jaya TV) and Miracle Dance (Vijay TV).',
+    instagram: '',
+  },
   Ganapathy: { name: 'Ganapathy', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
   Nakshathran: { name: 'Nakshathran', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
   Sajith: { name: 'Sajith', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], expertIn: 'Style', bio: LOREM, instagram: '' },
