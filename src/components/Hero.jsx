@@ -27,7 +27,9 @@ export default function Hero() {
 
             <motion.div {...fadeUp(0.3)}>
               <Crown className="hero-crown" />
-              <h1 className="hero-title">ADAPTUNE</h1>
+              <h1 className="hero-title">
+                ADAPTUNE<span className="visually-hidden"> Dance Crew, Coimbatore</span>
+              </h1>
               <p className="hero-sub">DANCE CREW · COIMBATORE</p>
               <span className="brand-bar mx-auto mx-lg-0" />
             </motion.div>

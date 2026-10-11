@@ -12,7 +12,7 @@ export const WHATSAPP_DISPLAY = '+91 99407 12680'
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/adaptune_official/',
   instagramHandle: '@adaptune_official',
-  // TODO: replace with your exact YouTube channel URL if different
+  // channel handle @ADAPTUNE (as listed on the team resumes)
   youtube: 'https://www.youtube.com/@adaptune',
 }
 

@@ -36,7 +36,6 @@ Clicking a card opens their profile. `TEAM_ORDER` sets who appears first (curren
 Everything business-related lives in [`src/config.js`](src/config.js): the WhatsApp number, Instagram/YouTube links, the address and the list of choreography services.
 All enquiries open WhatsApp (`wa.me/919940712680`) with a pre-filled message.
 
-> Double-check the YouTube URL in `src/config.js`. It's set to `https://www.youtube.com/@adaptune` as a best guess.
 
 ## Deploy to Vercel
 
@@ -48,7 +47,7 @@ All enquiries open WhatsApp (`wa.me/919940712680`) with a pre-filled message.
 
 ```
 gallery/                 ← your photos (auto-loaded)
-public/logo.png          ← favicon / social preview image
+public/                  ← favicons, og-image.jpg (link previews), robots.txt, sitemap.xml
 src/
   config.js              ← contact info, links, services
   gallery.js             ← gallery loader (import.meta.glob + imagetools)

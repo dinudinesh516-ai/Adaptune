@@ -108,7 +108,15 @@ export default function Gallery() {
                     transition={{ duration: 0.7, delay: ci * 0.08, ease: [0.22, 1, 0.36, 1] }}
                     aria-label={`Open photo: ${img.alt}`}
                   >
-                    <img src={img.thumb} alt={img.alt} width={img.width} height={img.height} loading="lazy" decoding="async" />
+                    <img
+                      src={img.thumb}
+                      alt={img.alt}
+                      width={img.width}
+                      height={img.height}
+                      loading="lazy"
+                      decoding="async"
+                      onLoad={(e) => e.currentTarget.parentElement.classList.add('is-loaded')}
+                    />
                     <span className="tile-overlay">
                       {img.category && <span className="tile-tag">{img.category}</span>}
                       <i className="bi bi-arrows-angle-expand" />

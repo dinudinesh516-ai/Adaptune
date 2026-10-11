@@ -3,21 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adaptune Dance Crew | Choreography in Coimbatore</title>
-    <meta name="description" content="Adaptune Dance Crew, Coimbatore. Choreography for schools, sangeeth, events, annual days, competitions and corporate events. Move • Inspire • Create • Belong." />
+
+    <!-- If the site moves to a custom domain, replace https://adaptune.vercel.app here,
+         in public/robots.txt and in public/sitemap.xml -->
+    <title>Adaptune Dance Crew | Choreographers in Coimbatore</title>
+    <meta name="description" content="Adaptune Dance Crew is a Coimbatore choreography team for school annual days, sangeeth, weddings, competitions, events and corporate shows. Enquire on WhatsApp." />
+    <link rel="canonical" href="https://adaptune.vercel.app/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#0a0a0a" />
-    <meta property="og:title" content="Adaptune Dance Crew" />
-    <meta property="og:description" content="Every step tells a story. Choreography for schools, sangeeth, events, annual days, competitions and corporate events in Coimbatore." />
-    <meta property="og:image" content="/logo.png" />
+
+    <!-- Social link previews (WhatsApp, Instagram, Facebook, LinkedIn, X) -->
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta property="og:site_name" content="Adaptune Dance Crew" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://adaptune.vercel.app/" />
+    <meta property="og:title" content="Adaptune Dance Crew | Choreographers in Coimbatore" />
+    <meta property="og:description" content="Every step tells a story. Choreography for schools, sangeeth, events, annual days, competitions and corporate shows in Coimbatore." />
+    <meta property="og:image" content="https://adaptune.vercel.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Adaptune Dance Crew logo with the tagline Move, Inspire, Create, Belong" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Adaptune Dance Crew | Choreographers in Coimbatore" />
+    <meta name="twitter:description" content="Choreography for schools, sangeeth, events, annual days, competitions and corporate shows in Coimbatore." />
+    <meta name="twitter:image" content="https://adaptune.vercel.app/og-image.jpg" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Business details for Google (local search, knowledge panel) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://adaptune.vercel.app/#business",
+        "name": "Adaptune Dance Crew",
+        "alternateName": "Adaptune",
+        "description": "Coimbatore dance crew offering choreography for schools, sangeeth, events, annual days, competitions and corporate events.",
+        "url": "https://adaptune.vercel.app/",
+        "logo": "https://adaptune.vercel.app/icon-512.png",
+        "image": "https://adaptune.vercel.app/og-image.jpg",
+        "telephone": "+91-99407-12680",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "B K Towers, Annaiyappan Street, Ramasamy Nagar Extension I, Nallampalayam",
+          "addressLocality": "Coimbatore",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "641006",
+          "addressCountry": "IN"
+        },
+        "areaServed": { "@type": "City", "name": "Coimbatore" },
+        "sameAs": ["https://www.instagram.com/adaptune_official/", "https://www.youtube.com/@adaptune"],
+        "knowsAbout": ["Choreography", "School annual day choreography", "Sangeeth choreography", "Wedding dance", "Corporate event performances", "Dance competitions", "Hip Hop", "Contemporary", "Folk dance", "Zumba"]
+      }
+    </script>
+
+    <!-- Fonts: loaded without blocking the first paint -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Permanent+Marker&family=Satisfy&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Permanent+Marker&family=Satisfy&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Permanent+Marker&family=Satisfy&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Permanent+Marker&family=Satisfy&display=swap" />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Adaptune Dance Crew, Coimbatore</h1>
+      <p>Choreography for schools, sangeeth, events, annual days, competitions and corporate events.</p>
+      <p>Enquiries on WhatsApp: <a href="https://wa.me/919940712680">+91 99407 12680</a></p>
+      <p>B K Towers, Annaiyappan Street, Ramasamy Nagar Extension I, Nallampalayam, Coimbatore, Tamil Nadu 641006</p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
