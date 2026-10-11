@@ -34,7 +34,7 @@ export const SERVICES = [
 // Every photo in /team becomes a team card automatically. The photo's file name (without
 // extension) is the key below, e.g. team/Vismai.jpg → TEAM.Vismai.
 // People listed in TEAM_ORDER come first, in that order; everyone else follows alphabetically.
-export const TEAM_ORDER = ['Vismai', 'Faizal', 'Jeffin']
+export const TEAM_ORDER = ['Vismai', 'Faizal', 'Nandhagopal', 'Sajeeth', 'Jeffin', 'Ganapathy', 'Varsha', 'Nachatran']
 
 const LOREM =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
