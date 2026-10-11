@@ -644,13 +644,10 @@ html.scroll-locked { overflow: hidden; }
   text-transform: uppercase;
   margin-top: 0.3rem;
 }
-/* Phones: cards are ~160px wide, too narrow for wide-spaced capitals, so use normal case and tight
-   spacing so each role part ("Professional Dancer") fits on one line */
-@media (max-width: 575.98px) {
-  .team-role { text-transform: none; letter-spacing: 0.02em; font-size: 0.74rem; line-height: 1.35; }
-}
-/* very narrow phones: let a part wrap rather than spill past the card */
-@media (max-width: 359.98px) {
+/* Phones and tablets: cards are 160–220px wide. Keep the capitals but tighten the spacing, and let a long
+   part ("PRINCIPAL CHOREOGRAPHER") break between its words rather than spill past the card */
+@media (max-width: 991.98px) {
+  .team-role { letter-spacing: 0.1em; line-height: 1.5; }
   .team-role .text-nowrap { white-space: normal !important; }
 }
 @media (hover: hover) {

@@ -51,11 +51,11 @@ export const TEAM = {
   // Vismai: details taken from his resume
   Vismai: {
     name: 'Vismai Shankar',
-    role: 'Choreographer · Zumba Instructor',
+    role: 'Founder · Principal Choreographer',
     experience: '13+', // choreographing since June 2013
     knownStyles: [
       'Western', 'Hip Hop', 'Free Style', 'Jazz', 'Salsa', 'Ballet', 'Contemporary', 'African Style', 'Jungle Style',
-      'Folk', 'Semi Folk', 'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance', 'Zumba',
+      'Folk', 'Semi Folk', 'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance', 'Zumba', 'Aqua Zumba',
     ],
     bio: 'A creative choreographer with more than a decade of experience, Vismai designs routines that span western, contemporary and cinematic folk styles, translating stories and music into movement that captivates audiences. Vismai currently choreographs for over ten schools across Coimbatore, has created pieces for colleges including PSG, Karpagam, NGP and Nirmala College, and for corporates such as Cognizant, Dell and Bosch. TV appearances include Ungalil Yaar Adutha Prabhudeva (Star Vijay), India’s Dancing Super Star (Star Plus) and Miracle Dance (Vijay TV). Vismai is also a licensed international Zumba and Aqua Zumba instructor.',
     reel: 'https://www.instagram.com/reel/DakldKBzIxm/',
@@ -64,7 +64,7 @@ export const TEAM = {
   // The entries below are from each member's own profile
   Faizal: {
     name: 'Faizal',
-    role: 'Professional Dancer · Dance Artist',
+    role: 'Team Manager · Lead Choreographer',
     experience: '11',
     knownStyles: ['Western', 'Hip Hop', 'Freestyle', 'Contemporary', 'Folk', 'Semi Classical', 'Creative Style'],
     bio: 'Dance is my passion, my expression and my way of life. With 11 years in the field, I believe in creating my own style, expressing myself through movement and constantly exploring new possibilities in dance. “I believe in my own rhythm, create my own style, and let my dance tell my story.”',
@@ -73,7 +73,7 @@ export const TEAM = {
   },
   Jeffin: {
     name: 'Jeffin',
-    role: 'Contemporary Dancer · Instructor',
+    role: 'Senior Choreographer',
     experience: '4',
     knownStyles: ['Contemporary', 'Freestyle', 'Lyrical', 'Afro', 'Western Folk', 'Traditional Folk', 'Cinematic Folk'],
     bio: 'Dance somehow found its way into my life without me even realising it. It all started with me being a student, knowing little to nothing about dance or where this journey would take me. Somewhere along the way, what started as a learning experience became a part of who I am. Now I teach others the same way I was once taught, sharing the knowledge, passion and lessons that dance has given me over the years.',
@@ -82,7 +82,7 @@ export const TEAM = {
   },
   Nachatran: {
     name: 'Nachatran',
-    role: 'Choreographer · Dance Teacher',
+    role: 'Senior Choreographer',
     experience: '4',
     knownStyles: ['Hip Hop', 'Locking', 'Popping', 'Waacking', 'Breaking', 'Contemporary', 'Folk'],
     bio: 'Dance is not just an extracurricular activity; it is an education in itself. I don’t see dance as just a job but as a way to express my feelings. I love both mass performances and emotional choreography, and I always perform to the vibe and emotion of the song. Teaching students, choreographing performances and earning recognition are all part of my growth journey. Some feelings cannot be expressed through words, but they can be expressed through a single movement. That is the connection I have with dance.',
@@ -91,7 +91,7 @@ export const TEAM = {
   },
   Nandhagopal: {
     name: 'Nandhagopal',
-    role: 'Choreographer · Zumba Instructor',
+    role: 'Principal Choreographer',
     experience: '19',
     knownStyles: ['Western', 'Folk', 'Semi Classical', 'Contemporary', 'Zumba'],
     bio: 'I’m Nandha: choreographer, Zumba instructor and dancer. I love to teach western, folk, semi classical, contemporary and many other dance forms, each in its own way. Still dreaming, still learning, still finding new ways to teach. Love dance, live to dance.',
@@ -100,7 +100,7 @@ export const TEAM = {
   },
   Sajeeth: {
     name: 'Sajeeth',
-    role: 'Western Dance Artist',
+    role: 'Lead Choreographer',
     experience: '12',
     knownStyles: ['All Western Styles', 'Hip Hop', 'Popping', 'Locking', 'Contemporary', 'Semi Classical', 'Folk Dance'],
     bio: 'With 12 years of experience across every western dance style, from hip-hop, popping and locking to contemporary, as well as semi classical and folk, Sajeeth brings range and feeling to every routine. In Sajeeth’s own words: “For me, dance isn’t just entertainment. It’s a subject that lets me express all my emotions, a source of complete happiness and connection. Dance is my soul.”',
@@ -109,8 +109,8 @@ export const TEAM = {
   },
   Ganapathy: {
     name: 'Ganapathy',
-    role: 'Street Dance Artist',
-    experience: '9',
+    role: 'Senior Choreographer',
+    experience: '8',
     knownStyles: [
       'All Western Styles', 'Hip Hop', 'Freestyle', 'Popping', 'Locking', 'Tutting', 'Breaking', 'Waacking',
       'Contemporary', 'Jazz',
@@ -121,7 +121,7 @@ export const TEAM = {
   },
   Varsha: {
     name: 'Varsha',
-    role: 'Bharatanatyam Artist · Dance Instructor',
+    role: 'Bharatanatyam Artist · Senior Choreographer',
     experience: '5',
     knownStyles: [
       'Bharatanatyam', 'Semi Classical', 'Fusion Classical', 'Traditional Folk', 'Cinematic Folk', 'Freestyle',
