@@ -33,6 +33,17 @@ const members = Object.keys(thumbs)
   })
   .sort((a, b) => rank(a.key) - rank(b.key) || a.key.localeCompare(b.key))
 
+// Keeps each part of a role together ("TV Performer" never splits), so lines only break at the " · " separators
+function RoleText({ role }) {
+  const parts = role.split(/\s*·\s*/)
+  return parts.map((part, i) => (
+    <span key={i}>
+      <span className="text-nowrap">{part}</span>
+      {i < parts.length - 1 && ' · '}
+    </span>
+  ))
+}
+
 export default function Team() {
   const [active, setActive] = useState(null)
 
@@ -64,7 +75,7 @@ export default function Team() {
                   </span>
                   <span className="team-info">
                     <span className="team-name">{m.name}</span>
-                    {m.role && <span className="team-role">{m.role}</span>}
+                    {m.role && <span className="team-role"><RoleText role={m.role} /></span>}
                   </span>
                 </button>
               </Reveal>
@@ -152,7 +163,7 @@ function TeamModal({ index, onChange, onClose }) {
                 </div>
 
                 <div className="profile-details">
-                  <p className="eyebrow mb-2">{m.role}</p>
+                  <p className="eyebrow mb-2"><RoleText role={m.role} /></p>
                   <h3 id="profile-name" className="profile-name">{m.name}</h3>
 
                   <div className="profile-facts-row">

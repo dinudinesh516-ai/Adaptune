@@ -51,7 +51,7 @@ export const TEAM = {
   // Vismai: details taken from his resume
   Vismai: {
     name: 'Vismai Shankar',
-    role: 'Subtitle',
+    role: 'Choreographer · Zumba Instructor',
     experience: '13+', // choreographing since June 2013
     knownStyles: [
       'Western', 'Hip Hop', 'Free Style', 'Jazz', 'Salsa', 'Ballet', 'Contemporary', 'African Style', 'Jungle Style',
@@ -73,7 +73,7 @@ export const TEAM = {
   },
   Jeffin: {
     name: 'Jeffin',
-    role: 'Subtitle',
+    role: 'Contemporary Dancer · Instructor',
     experience: '4',
     knownStyles: ['Contemporary', 'Freestyle', 'Lyrical', 'Afro', 'Western Folk', 'Traditional Folk', 'Cinematic Folk'],
     bio: 'Dance somehow found its way into my life without me even realising it. It all started with me being a student, knowing little to nothing about dance or where this journey would take me. Somewhere along the way, what started as a learning experience became a part of who I am. Now I teach others the same way I was once taught, sharing the knowledge, passion and lessons that dance has given me over the years.',
@@ -82,7 +82,7 @@ export const TEAM = {
   },
   Nachatran: {
     name: 'Nachatran',
-    role: 'Subtitle',
+    role: 'Choreographer · Dance Teacher',
     experience: '4',
     knownStyles: ['Hip Hop', 'Locking', 'Popping', 'Waacking', 'Breaking', 'Contemporary', 'Folk'],
     bio: 'Dance is not just an extracurricular activity; it is an education in itself. I don’t see dance as just a job but as a way to express my feelings. I love both mass performances and emotional choreography, and I always perform to the vibe and emotion of the song. Teaching students, choreographing performances and earning recognition are all part of my growth journey. Some feelings cannot be expressed through words, but they can be expressed through a single movement. That is the connection I have with dance.',
@@ -100,7 +100,7 @@ export const TEAM = {
   },
   Sajeeth: {
     name: 'Sajeeth',
-    role: 'Subtitle',
+    role: 'Western Dance Artist',
     experience: '12',
     knownStyles: ['All Western Styles', 'Hip Hop', 'Popping', 'Locking', 'Contemporary', 'Semi Classical', 'Folk Dance'],
     bio: 'With 12 years of experience across every western dance style, from hip-hop, popping and locking to contemporary, as well as semi classical and folk, Sajeeth brings range and feeling to every routine. In Sajeeth’s own words: “For me, dance isn’t just entertainment. It’s a subject that lets me express all my emotions, a source of complete happiness and connection. Dance is my soul.”',
@@ -109,7 +109,7 @@ export const TEAM = {
   },
   Ganapathy: {
     name: 'Ganapathy',
-    role: 'Subtitle',
+    role: 'Street Dance Artist',
     experience: '9',
     knownStyles: [
       'All Western Styles', 'Hip Hop', 'Freestyle', 'Popping', 'Locking', 'Tutting', 'Breaking', 'Waacking',
@@ -121,7 +121,7 @@ export const TEAM = {
   },
   Varsha: {
     name: 'Varsha',
-    role: 'Subtitle',
+    role: 'Bharatanatyam Artist · Dance Instructor',
     experience: '5',
     knownStyles: [
       'Bharatanatyam', 'Semi Classical', 'Fusion Classical', 'Traditional Folk', 'Cinematic Folk', 'Freestyle',
