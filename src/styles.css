@@ -687,6 +687,9 @@ html.scroll-locked { overflow: hidden; }
 .profile-photo { position: relative; background: #000; }
 .profile-photo img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 1; }
 .profile-details { padding: clamp(1.4rem, 4vw, 2.6rem); }
+/* keep the role and name clear of the close button in the corner */
+.profile-details > .eyebrow,
+.profile-name { padding-right: 2.75rem; }
 .profile-name {
   font-weight: 900;
   font-size: clamp(1.7rem, 4vw, 2.6rem);
@@ -695,11 +698,20 @@ html.scroll-locked { overflow: hidden; }
   line-height: 1.05;
   margin-bottom: 1.4rem;
 }
+/* experience box with the Instagram icon beside it */
+.profile-facts-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+.profile-facts-row .social-btn { flex-shrink: 0; width: 48px; height: 48px; font-size: 1.25rem; }
 .profile-facts {
   display: grid;
   grid-template-columns: minmax(0, 240px);
   gap: 0.75rem;
-  margin: 0 0 1.4rem;
+  margin: 0;
+  flex: 0 1 240px;
 }
 .profile-facts > div {
   background: #101010;

@@ -155,14 +155,30 @@ function TeamModal({ index, onChange, onClose }) {
                   <p className="eyebrow mb-2">{m.role}</p>
                   <h3 id="profile-name" className="profile-name">{m.name}</h3>
 
-                  <dl className="profile-facts">
-                    <div>
-                      <dt>Experience</dt>
-                      <dd>
-                        <span className="profile-big">{m.experience}</span> years
-                      </dd>
-                    </div>
-                  </dl>
+                  <div className="profile-facts-row">
+                    <dl className="profile-facts">
+                      <div>
+                        <dt>Experience</dt>
+                        <dd>
+                          <span className="profile-big">{m.experience}</span> years
+                        </dd>
+                      </div>
+                    </dl>
+
+                    {/* round Instagram icon (same as the footer): opens their reel, or their profile if no reel */}
+                    {(m.reel || m.instagram) && (
+                      <a
+                        className="social-btn"
+                        href={m.reel || m.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${m.name} on Instagram`}
+                        title={`${m.name} on Instagram`}
+                      >
+                        <i className="bi bi-instagram" />
+                      </a>
+                    )}
+                  </div>
 
                   <p className="profile-label">Known styles</p>
                   <ul className="profile-styles">
@@ -171,14 +187,12 @@ function TeamModal({ index, onChange, onClose }) {
                     ))}
                   </ul>
 
-                  <p className="profile-bio">{m.bio}</p>
-
-                  {m.instagram && (
-                    <a className="btn btn-outline-brand btn-sm" href={m.instagram} target="_blank" rel="noopener noreferrer">
-                      <i className="bi bi-instagram me-2" />
-                      Instagram
-                    </a>
-                  )}
+                  {/* a blank line in the bio starts a new paragraph */}
+                  {m.bio.split(/\n\s*\n/).map((para, i) => (
+                    <p className="profile-bio" key={i}>
+                      {para.trim()}
+                    </p>
+                  ))}
                 </div>
               </motion.div>
             </AnimatePresence>
