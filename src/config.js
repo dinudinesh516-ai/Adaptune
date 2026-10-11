@@ -47,7 +47,7 @@ const LOREM =
 // bio         → paragraph shown in the profile popup
 // instagram   → optional full Instagram URL ('' hides the button)
 export const TEAM = {
-  // Vismai, Faizal and Jeffin: details taken from their resumes
+  // Vismai: details taken from his resume
   Vismai: {
     name: 'Vismai Shankar',
     role: 'Subtitle',
@@ -59,29 +59,39 @@ export const TEAM = {
     bio: 'A creative choreographer with more than a decade of experience, Vismai designs routines that span western, contemporary and cinematic folk styles, translating stories and music into movement that captivates audiences. Vismai currently choreographs for over ten schools across Coimbatore, has created pieces for colleges including PSG, Karpagam, NGP and Nirmala College, and for corporates such as Cognizant, Dell and Bosch. TV appearances include Ungalil Yaar Adutha Prabhudeva (Star Vijay), India’s Dancing Super Star (Star Plus) and Miracle Dance (Vijay TV). Vismai is also a licensed international Zumba and Aqua Zumba instructor.',
     instagram: '',
   },
+  // The entries below are from each member's own profile
   Faizal: {
     name: 'Faizal',
-    role: 'Subtitle',
-    experience: '10+', // "over 10 years" per resume summary
-    knownStyles: [
-      'Western', 'Hip Hop', 'Free Style', 'Salsa', 'Contemporary', 'Jungle Style', 'Folk', 'Semi Folk',
-      'Cinematic Folk', 'Cinematic Choreography', 'Traditional Folk', 'Creative Dance',
-    ],
-    bio: 'An energetic and versatile western-style dancer with over 10 years of experience, Faizal specialises in hip-hop, contemporary, freestyle and commercial choreography. Known for dynamic movement, strong musicality and the ability to pick up new styles quickly, Faizal performs solo and in groups across stage shows, music videos, cultural festivals and freestyle battles, and danced in the film Friendship. TV appearances include Miracle Dance (Vijay TV), Miracle Dancers (Vendhar TV) and Rainbow Dance (Polimer TV).',
+    role: 'Professional Dancer · Dance Artist',
+    experience: '11',
+    knownStyles: ['Western', 'Hip Hop', 'Freestyle', 'Contemporary', 'Folk', 'Semi Classical', 'Creative Style'],
+    bio: 'Dance is my passion, my expression and my way of life. With 11 years in the field, I believe in creating my own style, expressing myself through movement and constantly exploring new possibilities in dance. “I believe in my own rhythm, create my own style, and let my dance tell my story.”',
     instagram: '',
   },
   Jeffin: {
     name: 'Jeffin',
     role: 'Subtitle',
-    experience: '5+', // "5 years" per resume summary (school work listed since 2018)
-    knownStyles: [
-      'Western', 'Hip Hop', 'Free Style', 'Contemporary', 'Jungle Style', 'Folk', 'Semi Folk', 'Cinematic Folk',
-      'Traditional Folk', 'Creative Dance',
-    ],
-    bio: 'A passionate and dedicated dancer with years of training and performance in contemporary, hip-hop and freestyle, Jeffin brings strong stage presence and a knack for learning new styles fast. Jeffin choreographs for schools across Coimbatore and for colleges including SNR, Hindusthan and UIT, has competed at the state-level dance competition in Kerala, and has appeared on Little Super Stars (Jaya TV) and Miracle Dance (Vijay TV).',
+    experience: '4',
+    knownStyles: ['Contemporary', 'Freestyle', 'Lyrical', 'Afro', 'Western Folk', 'Traditional Folk', 'Cinematic Folk'],
+    bio: 'Dance somehow found its way into my life without me even realising it. It all started with me being a student, knowing little to nothing about dance or where this journey would take me. Somewhere along the way, what started as a learning experience became a part of who I am. Now I teach others the same way I was once taught, sharing the knowledge, passion and lessons that dance has given me over the years.',
     instagram: '',
   },
-  // Sajeeth: details from his bio data
+  Nachatran: {
+    name: 'Nachatran',
+    role: 'Subtitle',
+    experience: '4',
+    knownStyles: ['Hip Hop', 'Locking', 'Popping', 'Waacking', 'Breaking', 'Contemporary', 'Folk'],
+    bio: 'Dance is not just an extracurricular activity; it is an education in itself. I don’t see dance as just a job but as a way to express my feelings. I love both mass performances and emotional choreography, and I always perform to the vibe and emotion of the song. Teaching students, choreographing performances and earning recognition are all part of my growth journey. Some feelings cannot be expressed through words, but they can be expressed through a single movement. That is the connection I have with dance.',
+    instagram: '',
+  },
+  Nandhagopal: {
+    name: 'Nandhagopal',
+    role: 'Choreographer · Zumba Instructor',
+    experience: '19',
+    knownStyles: ['Western', 'Folk', 'Semi Classical', 'Contemporary', 'Zumba'],
+    bio: 'I’m Nandha: choreographer, Zumba instructor and dancer. I love to teach western, folk, semi classical, contemporary and many other dance forms, each in its own way. Still dreaming, still learning, still finding new ways to teach. Love dance, live to dance.',
+    instagram: '',
+  },
   Sajeeth: {
     name: 'Sajeeth',
     role: 'Subtitle',
@@ -91,7 +101,6 @@ export const TEAM = {
     instagram: '',
   },
   Ganapathy: { name: 'Ganapathy', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' },
-  Nakshathran: { name: 'Nakshathran', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' },
   Varsha: { name: 'Varsha', role: 'Subtitle', experience: 'X', knownStyles: ['Style 1', 'Style 2', 'Style 3'], bio: LOREM, instagram: '' },
 }
 

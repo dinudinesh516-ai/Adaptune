@@ -580,7 +580,11 @@ html.scroll-locked { overflow: hidden; }
 
 /* ─── Team ───────────────────────────────────────────────────── */
 .team-card {
-  display: block;
+  /* flex column, top-aligned: a <button> centres its content vertically by default, which
+     would push photos out of line when one card's role wraps onto more lines */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
   padding: 0;
