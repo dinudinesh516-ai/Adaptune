@@ -80,8 +80,10 @@ export default function Contact() {
 
         <div className="row g-4 align-items-stretch">
           <div className="col-lg-7">
-            <Reveal className="contact-card h-100">
-              <form noValidate className={`row g-3 ${validated ? 'was-validated' : ''}`} onSubmit={submit}>
+            <Reveal className="contact-card h-100 d-flex flex-column">
+              {/* flex column so the message box stretches to fill the card, keeping the button level with the map */}
+              <form noValidate className={`contact-form ${validated ? 'was-validated' : ''}`} onSubmit={submit}>
+                <div className="row g-3">
                 <div className="col-md-6">
                   <label htmlFor="f-name" className="form-label">Your name *</label>
                   <input id="f-name" className="form-control" required value={form.name} onChange={set('name')} autoComplete="name" />
@@ -110,16 +112,15 @@ export default function Contact() {
                   <label htmlFor="f-loc" className="form-label">Venue / city</label>
                   <input id="f-loc" className="form-control" value={form.location} onChange={set('location')} />
                 </div>
-                <div className="col-12">
+                </div>
+                <div className="contact-message">
                   <label htmlFor="f-msg" className="form-label">Anything else?</label>
                   <textarea id="f-msg" rows="3" className="form-control" placeholder="Songs, theme, age group…" value={form.message} onChange={set('message')} />
                 </div>
-                <div className="col-12">
-                  <button type="submit" className="btn btn-brand btn-lg w-100">
-                    <i className="bi bi-whatsapp me-2" />
-                    Send enquiry on WhatsApp
-                  </button>
-                </div>
+                <button type="submit" className="btn btn-brand btn-lg w-100">
+                  <i className="bi bi-whatsapp me-2" />
+                  Send enquiry on WhatsApp
+                </button>
               </form>
             </Reveal>
           </div>
